@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../Css/GooeyButton.scss';
+import '../css/GooeyButton.scss';
 
 const GooeyButton = ({ buttonText, isActive, onClick }) => {
   return (

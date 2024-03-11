@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import '../Css/Header.css';
+import '../css/Header.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import GooeyButton from './GooeyButton';
 
