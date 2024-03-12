@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Presentation from './pages/Presentation';
 import Scene3d from './pages/Scene3d';
 import Competences from './pages/Competences';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Routes>
                   <Route path='/presentation' element={<Presentation />} />
                   <Route path='/competences' element={<Competences />} />
+                  <Route path='/contact' element={<Contact />} />
                 </Routes>
                 <Footer />
               </>

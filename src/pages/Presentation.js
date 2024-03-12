@@ -2,7 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../css/Presentation.css';
 import '../App.css';
-import { FaPhp, FaSwift, FaCss3, FaHtml5, FaJs, FaDatabase, FaPython, FaReact, FaMobile, FaJava } from 'react-icons/fa';
+import { FaPhp, FaSwift, FaCss3, FaHtml5, FaJs, FaDatabase, FaPython, FaReact, FaMobile} from 'react-icons/fa';
+import { SiCsharp } from 'react-icons/si';
 import { SiSymfony } from 'react-icons/si';
 import Modal from 'react-modal';
 import ModalPdf from '../components/ModalPdf';
@@ -20,7 +21,7 @@ const skillsData = [
   { name: 'Python', icon: FaPython, documentationLink: 'https://docs.python.org/3/' },
   { name: 'React.js', icon: FaReact, documentationLink: 'https://reactjs.org/docs/getting-started.html' },
   { name: 'React Native', icon: FaMobile, documentationLink: 'https://reactnative.dev/docs/getting-started' },
-  { name: 'Java', icon: FaJava, documentationLink: 'https://docs.oracle.com/en/java/javase/16/' },
+  { name: 'C#', icon: SiCsharp, documentationLink: 'https://learn.microsoft.com/fr-fr/dotnet/csharp/' },
 ];
 
 const Presentation = () => {
@@ -60,6 +61,7 @@ const Presentation = () => {
 
     const index = skillsData.findIndex((skill) => skill.icon === icon);
     const iconElement = React.createElement(icon, { size: 100, color: iconColors[index % iconColors.length] });
+    const documentationLink = skillsData[index].documentationLink;
     
 
     return (
@@ -69,9 +71,11 @@ const Presentation = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}>
         <div className="splash" />
+        <a href={documentationLink} target="_blank">
         <motion.div className="card" variants={cardVariants}>
           {iconElement}
         </motion.div>
+        </a>
       </motion.div>
     );
   };

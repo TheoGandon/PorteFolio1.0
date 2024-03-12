@@ -37,7 +37,6 @@ const Header = () => {
 
   const handleNavigation = (path) => () => {
     navigate(path);
-    console.log('path', path);
   };
 
   return (

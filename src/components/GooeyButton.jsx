@@ -15,7 +15,7 @@ const GooeyButton = ({ buttonText, isActive, onClick }) => {
         </defs>
       </svg>
 
-      <button id="gooey-button" style={{ filter: 'url(#gooey)', backgroundColor: isActive ? '#yourActiveColor' : '#yourDefaultColor' }} onClick={onClick}>
+      <button id="gooey-button" style={{ filter: 'url(#gooey)', backgroundColor: isActive ? '#yourActiveColor' : '#yourDefaultColor' }}>
         {buttonText}
         <span className="bubbles">
           {Array.from({ length: 10 }).map((_, index) => (
