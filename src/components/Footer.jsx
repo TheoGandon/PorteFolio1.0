@@ -12,7 +12,7 @@ const Footer = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div>
+      <div className='link2'>
         <h3>Contactez-moi</h3>
         <p>Email: theo.gandon9@gmail.com</p>
         <p>Téléphone: +33 6 76 63 61 02</p>

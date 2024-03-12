@@ -8,8 +8,9 @@
   align-items: center;
   width: 90%; 
   max-width: 1000px;
-  margin: 0.7% auto;
+  margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 2.5%;
 }
 
 .nav-main h1 {

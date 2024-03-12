@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Modal from 'react-modal';
 import { useState } from 'react';
 
+
 const ModalPdf = ({ PDF }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -37,7 +38,7 @@ const ModalPdf = ({ PDF }) => {
           <button className="close-cv" onClick={closeModal}>
             Fermer
           </button>
-          <iframe title="PDF" src={PDF} style={{ width: '100%', height: '700px' }} />
+          <iframe title="PDF" src={PDF} style={{ width: '100%', height: '900px' }} />
         </Modal>
       </div>
     </div>

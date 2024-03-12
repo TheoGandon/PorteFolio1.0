@@ -1,0 +1,64 @@
+.App {
+    background-color: #FFFFFF; 
+  }
+  .wave-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin-top: 5%;
+      left: 40%;
+    }
+  
+    .text-container {
+      text-align: center;
+      margin-top: 10%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  
+    .wave {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+    }
+    
+    .wave-inner {
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      border-radius: 50%;
+    }
+  
+    .title-main {
+      color: hsl(0, 0%, 28%);
+      font-size: 60px!important;
+      font-weight: bold!important;
+      font-family: monospace;
+      letter-spacing: 7px!important;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    
+    .title-main {
+      padding: 64px;
+      background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s infinite linear;
+    }
+    
+    @keyframes shine {
+      0% {
+        background-position: 0;
+      }
+      60% {
+        background-position: 600px;
+      }
+      100% {
+        background-position: 700px;
+      }
+    }

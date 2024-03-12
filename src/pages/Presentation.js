@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import '../css/Presentation.css';
 import '../App.css';
-import PDP from '../asset/profile.png';
 import { FaPhp, FaSwift, FaCss3, FaHtml5, FaJs, FaDatabase, FaPython, FaReact, FaMobile, FaJava } from 'react-icons/fa';
 import { SiSymfony } from 'react-icons/si';
 import Modal from 'react-modal';
@@ -25,7 +24,6 @@ const skillsData = [
 ];
 
 const Presentation = () => {
-
   const PDF = CV;
   Modal.setAppElement('#root');
   const cardVariants = {
@@ -79,7 +77,7 @@ const Presentation = () => {
   };
 
   return (
-    <div className="App">
+    <div className="presentation">
       <div className="portfolio-container">
         <motion.div
           className="portfolio-content"
@@ -109,29 +107,6 @@ const Presentation = () => {
         </div>
       </div>
       </div>
-      <div className="test-container">
-        <h2>A propos de moi</h2>
-        <div class="shape-outer circle">
-	        <div class="shape-inner circle"><img src={PDP} alt="profile" />a</div>
-        </div>
-        <p>
-          Je m'appelle Théo GANDON et je suis passionné par le développement web et mobile. Actuellement étudiant à l'EPSI Lille depuis 2022.
-
-Compétences techniques :
-Développement Web : Maîtrise des langages PHP, Symfony, et JavaScript (React Native / JS) pour concevoir des applications web interactives et modernes.
-
-Base de données : Expérience approfondie avec MySQL pour assurer la gestion efficace des données et optimiser les performances des applications.
-
-Développement Mobile : Connaissance de Swift pour la création d'applications iOS, ainsi qu'en React Native pour le développement d'applications multiplateformes.
-
-Langage polyvalent : Aptitude à utiliser Python pour automatiser des tâches, créer des scripts et résoudre des problèmes de manière efficace.
-
-Au fil de mon parcours académique et professionnel, j'ai eu l'opportunité de travailler sur divers projets qui ont enrichi mes compétences et ma compréhension du développement logiciel. Mon portfolio est le reflet de cette expérience, mettant en avant mes réalisations et démontrant ma capacité à relever des défis techniques.
-
-N'hésitez pas à explorer mon portfolio pour découvrir mes projets passés, mes compétences techniques. Merci de votre visite, et n'hésitez pas à me contacter pour discuter de projets passionnants ou d'opportunités de collaboration.
-          
-          </p>        
-        </div>
     </div>
   );
 };
