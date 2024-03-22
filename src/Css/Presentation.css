@@ -5,8 +5,13 @@
   align-items: center;
   justify-content: center;
   margin-right: auto;
-  margin-top: 8%;
-  width: 800px;
+  width: 700px;
+}
+
+.portfolio-first {
+  display: flex;  
+  justify-items: center;
+  margin-left: 5%;
 }
 
 .portfolio-content p {
@@ -35,8 +40,7 @@
   }
 }
 
-.skill-bg {
-  margin-top: 10%;
+.skill-bg { 
   position: relative;
   padding: 100px 0;
   background-image: url('../asset/competencesBg.jpg');

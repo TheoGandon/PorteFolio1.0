@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 input {
-  caret-color: rgb(0, 174, 255);
+  caret-color: #24c93a;
 }
 
 
@@ -14,6 +14,7 @@ input {
   box-sizing: border-box;
   background: #ecf0f3;
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  margin-bottom: 4%;
 }
 
 .brand-logo {
@@ -72,7 +73,7 @@ input {
 .button {
   color: white;
   margin-top: 20px;
-  background: #1DA1F2;
+  background: #24c93a;
   height: 40px;
   border-radius: 20px;
   cursor: pointer;

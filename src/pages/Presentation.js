@@ -1,13 +1,15 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion} from 'framer-motion';
 import '../css/Presentation.css';
 import '../App.css';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { FaPhp, FaSwift, FaCss3, FaHtml5, FaJs, FaDatabase, FaPython, FaReact, FaMobile} from 'react-icons/fa';
 import { SiCsharp } from 'react-icons/si';
 import { SiSymfony } from 'react-icons/si';
 import Modal from 'react-modal';
 import ModalPdf from '../components/ModalPdf';
 import CV from '../asset/CV.pdf';
+import ImageProfile from '../components/ImageProfile';
 
 
 const skillsData = [
@@ -71,7 +73,7 @@ const Presentation = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.8 }}>
         <div className="splash" />
-        <a href={documentationLink} target="_blank">
+        <a href={documentationLink} target="_blank" rel="noreferrer">
         <motion.div className="card" variants={cardVariants}>
           {iconElement}
         </motion.div>
@@ -83,18 +85,21 @@ const Presentation = () => {
   return (
     <div className="presentation">
       <div className="portfolio-container">
+        <div className='portfolio-first'>
         <motion.div
           className="portfolio-content"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+          transition={{ duration: 0.5 }}>
           <h1>Présentation</h1>
           <p className='text-presentation'>
           Je suis Théo Gandon, étudiant en informatique à l'EPSI Lille. Passionné par les technologies émergentes et l'innovation, je m'efforce de développer mes compétences dans le vaste monde de l'informatique. Mon portfolio est le reflet de mon parcours académique et de mes projets personnels, mettant en lumière ma créativité et mon engagement envers l'excellence technique. Explorez mon univers numérique et découvrez les différentes facettes de mon parcours informatique. Bienvenue dans mon monde technologique.
           </p>
           <ModalPdf PDF={PDF} />
         </motion.div>
+        <ImageProfile />
+        </div>
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce='true'>
       <div className="skill-bg">
         <div className="skills-container">
           <h2>Compétences</h2>
@@ -110,6 +115,7 @@ const Presentation = () => {
           </motion.div>
         </div>
       </div>
+      </AnimationOnScroll>
       </div>
     </div>
   );

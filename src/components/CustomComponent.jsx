@@ -10,11 +10,18 @@ const ModalComponent = ({ showModal, closeModal, selectedProjects }) => {
           &times;
         </span>
         {selectedProjects.map((project, index) => (
-          <div key={index}>
+          <li class="item">
+            <div class="inner">
+            <div key={index} className='competences'>
+            <div className='projet'>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <p>{project.technologies}</p>
+            <p className='techno'>{project.technologies}</p>
+            <button className='buttonProjet'>Voir le projet</button>
+            </div>
           </div>
+            </div>
+          </li>
         ))}
       </div>
     </div>
