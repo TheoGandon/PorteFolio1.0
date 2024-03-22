@@ -1,6 +1,6 @@
 .modal-competences {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 700px;
+    width: 900px;
     padding: 2%;
     margin: 50px auto;
 }
@@ -135,9 +135,9 @@
   align-items: center;
   background: rgb(222,255,214);
   background: linear-gradient(90deg, rgba(222,255,214,1) 0%, rgba(100,248,100,1) 50%, rgba(146, 189, 148, 0.701) 100%);
-  width: 600px;
+  width: 700px;
   text-align: center;
-  height: 600px;
+  height: 420px;
   border-radius: 16px;
   position: relative;
   margin: 0 auto;
@@ -159,12 +159,12 @@ background: linear-gradient(90deg, rgba(222,255,214,1) 0%, rgba(100,248,100,1) 5
 
 .inner {
   background-color: #fff;
-  width: 520px;
+  width: 660px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 520px;
-  box-shadow: 0 40px 80px #FBE4E0;
+  height: 400px;
+  box-shadow: 0 40px 80px #d1f5c2;
   border-radius: 14px;
 }
 

@@ -1,14 +1,18 @@
 import React from 'react';
+import '../css/ProjetComp.css';
 
 const ProjetComp = ({ projects }) => {
   return (
     <div className="project-box">
       {projects.map((project, index) => (
         <div key={index} className="project">
-          <img src={project.imageUrl} alt={project.title} />
           <h2>{project.title}</h2>
+          <div className='video-project'>
           <p>{project.description}</p>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">Voir le projet</a>
+          <video autoPlay muted loop>
+          <source src={project.video} type="video/mp4" />
+          </video>
+          </div>
         </div>
       ))}
     </div>

@@ -1,0 +1,31 @@
+
+  .stage-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .stage-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 900px;
+    margin: 5% auto;
+    padding: 20px;
+  }
+  
+  .stage-title2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+ 
+  .stage-content p {
+    margin: 5px 0;
+  }
+
+  .stage-content:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  

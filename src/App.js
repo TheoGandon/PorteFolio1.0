@@ -6,7 +6,8 @@ import Presentation from './pages/Presentation';
 import Scene3d from './pages/Scene3d';
 import Competences from './pages/Competences';
 import Contact from './pages/Contact';
-import Projet from './pages/Projet';  
+import Projet from './pages/Projet'; 
+import Stage from './pages/Stage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                   <Route path='/competences' element={<Competences />} />
                   <Route path='/contact' element={<Contact />} />
                   <Route path='/projets' element={<Projet />} />
+                  <Route path='/stages' element={<Stage />} />
                 </Routes>
                 <Footer />
               </>

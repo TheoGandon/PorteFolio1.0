@@ -48,8 +48,8 @@ const CustomComponent = ({ projectsToChoose, competences }) => {
   return (
     <motion.div
         className="competence"
-        whileHover={{ scale: 1.03, originX: 0, originY: 0}}
-        transition={{ type: 'spring', stiffness: 300 }}
+        whileHover={{ scale: 1.01, originX: 0, originY: 0}}
+        transition={{ type: 'fade', stiffness: 300 }}
       >
     <div className='modal-competences'>
       <h2>{competences}</h2>

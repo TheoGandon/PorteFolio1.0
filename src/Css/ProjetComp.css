@@ -1,0 +1,29 @@
+
+.project-box {
+    width: 70%;
+    margin: 5% auto;
+}
+
+video {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.video-project {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px;
+    padding: 3%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.video-project p {
+    margin-right: 20px; 
+}
+
+.video-project video {
+    flex-grow: 1; 
+}
