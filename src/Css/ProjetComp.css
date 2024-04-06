@@ -21,9 +21,11 @@ video {
 }
 
 .video-project p {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .video-project video {
     flex-grow: 1; 
 }
+
+

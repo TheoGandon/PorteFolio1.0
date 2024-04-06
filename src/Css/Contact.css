@@ -4,23 +4,23 @@ input {
   caret-color: #24c93a;
 }
 
-
 .container-contact {
   margin: 0 auto;
-  width: 500px;
-  height: 500px;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;
-  background: #ecf0f3;
+  background: #F2F2F2;
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
   margin-bottom: 4%;
 }
 
 .brand-logo {
-  height: 93px;
+  height: 100px;
   width: 100px;
-  background: url("../asset/contact-logo.jpg");
+  background: url("../asset/contactLogo.png");
   margin: auto;
 }
 
@@ -68,8 +68,6 @@ input {
   box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 
-
-
 .button {
   color: white;
   margin-top: 20px;
@@ -84,4 +82,27 @@ input {
 
 button:hover {
   box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+  .container-contact {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 4%;
+  }
+  
+  .brand-title {
+    font-size: 1.5rem;
+  }
+  
+  input {
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  .button {
+    height: 30px;
+    font-size: 14px;
+  }
 }

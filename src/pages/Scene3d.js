@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import React, { useRef, Suspense } from 'react';
+import React, { useRef, Suspense, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei';
 import Scene3dHtml from './Scene3dHtml.js';
@@ -11,11 +11,18 @@ function Model(props) {
   const group = useRef();
 
   const { nodes, materials } = useGLTF('/mac-draco.glb');
-
+  const [isAnimating, setIsAnimating] = useState(false);
+  const groupRef = useRef();
   const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate('/presentation');
+    setTimeout(() => {
+      setIsAnimating(true);
+    }, 1000);
+    setTimeout(() => {
+      navigate('/presentation');
+      console.log('navigating');
+    }, 3000);
   }
 
   useFrame((state) => {
@@ -24,18 +31,28 @@ function Model(props) {
     group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, Math.sin(t / 4) / 20, 0.02);
     group.current.rotation.z = THREE.MathUtils.lerp(group.current.rotation.z, Math.sin(t / 8) / 20, 0.02);
     group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, (-2 + Math.sin(t / 2)) / 2, 0.02);
+
+    if (isAnimating) {
+      if (groupRef.current) {
+        groupRef.current.rotation.x = THREE.MathUtils.lerp(groupRef.current.rotation.x, Math.PI / -0.1, 0.2);
+        groupRef.current.position.x = THREE.MathUtils.lerp(groupRef.current.position.x,0, 0.2);
+        groupRef.current.position.y = THREE.MathUtils.lerp(groupRef.current.position.y,2.6, 0.2);
+        groupRef.current.position.z = THREE.MathUtils.lerp(groupRef.current.position.z,-1.6, 0.2);
+    }
+    }
   });
 
   return (
     <group ref={group} {...props} dispose={null} onClick={handleNavigation}>
+      <Html className='title'><h1>Cliquer sur l'ordinateur pour l'ouvrir</h1></Html>
       <group rotation-x={-0.425} position={[0, -0.04, 0.41]}>
-        <group position={[0, 2.96, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
+        <group ref={groupRef} position={[0, -1.1, 2.75]} rotation={[Math.PI / -1.15, 0, 0]}>
           <mesh material={materials.aluminium} geometry={nodes['Cube008'].geometry} />
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
             <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
               <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
-                <Scene3dHtml />
+                  <Scene3dHtml />
               </div>
             </Html>
           </mesh>

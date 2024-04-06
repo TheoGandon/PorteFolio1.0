@@ -52,3 +52,9 @@
     );
   }
 }
+@media screen and (max-width: 768px) {
+  .content-title h2 {
+    font-size: 6em;
+  }
+}
+

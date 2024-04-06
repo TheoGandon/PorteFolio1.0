@@ -13,6 +13,7 @@ const ProjetComp = ({ projects }) => {
           <source src={project.video} type="video/mp4" />
           </video>
           </div>
+          <p className='techno'>{project.languages}</p>
         </div>
       ))}
     </div>

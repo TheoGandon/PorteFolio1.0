@@ -29,3 +29,10 @@ body {
   transform: scale(0.4);
   transform-origin: top left;
 }
+
+.title {
+  color: #000000;
+  bottom: 20px;
+  left: 280px;
+  width: 300px;
+}

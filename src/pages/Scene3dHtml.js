@@ -11,7 +11,7 @@ function Scene3dHtml() {
       <div className='header'>
       <Header />
       </div>
-      <h1 className="title-main">Bienvenue sur mon portfolio clicquez sur l'ordinateur pour commencer</h1>
+      <h1 className="title-main">Bienvenue sur mon portfolio</h1>
       <Footer />
       </BrowserRouter>
     </div>
