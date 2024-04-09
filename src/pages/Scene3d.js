@@ -34,10 +34,10 @@ function Model(props) {
 
     if (isAnimating) {
       if (groupRef.current) {
-        groupRef.current.rotation.x = THREE.MathUtils.lerp(groupRef.current.rotation.x, Math.PI / -0.1, 0.2);
-        groupRef.current.position.x = THREE.MathUtils.lerp(groupRef.current.position.x,0, 0.2);
-        groupRef.current.position.y = THREE.MathUtils.lerp(groupRef.current.position.y,2.6, 0.2);
-        groupRef.current.position.z = THREE.MathUtils.lerp(groupRef.current.position.z,-1.6, 0.2);
+        groupRef.current.rotation.x = THREE.MathUtils.lerp(groupRef.current.rotation.x, Math.PI / -0.6, 0.02);
+        groupRef.current.position.x = THREE.MathUtils.lerp(groupRef.current.position.x,0, 0.02);
+        groupRef.current.position.y = THREE.MathUtils.lerp(groupRef.current.position.y,2.6, 0.02);
+        groupRef.current.position.z = THREE.MathUtils.lerp(groupRef.current.position.z,-1.6, 0.02);
     }
     }
   });

@@ -5,16 +5,16 @@ const Stage = () => {
     const stages = [
         {
             id: 1,
-            entreprise: 'Entreprise 1',
+            entreprise: 'Réstaurant Industie',
             poste: 'Stage développeur web',
-            duree: '3 mois',
+            duree: '2 mois',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nunc nec aliquet ultrices, nisl nunc tincidunt nunc, id aliquam nunc nisl nec nunc.',
         },
         {
             id: 2,
             entreprise: 'Entreprise 2',
-            poste: 'Stage développeur mobile',
-            duree: '6 mois',
+            poste: 'Stage développeur Web',
+            duree: '2 mois',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed euismod, nunc nec aliquet ultrices, nisl nunc tincidunt nunc, id aliquam nunc nisl nec nunc.',
         },
     ];

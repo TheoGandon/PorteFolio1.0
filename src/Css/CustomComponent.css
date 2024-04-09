@@ -1,6 +1,6 @@
 .modal-competences {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 900px;
+    width: 800px;
     padding: 2%;
     margin: 50px auto;
 }
@@ -69,7 +69,8 @@
   border-radius: 7px;
   padding: 2%;
   width: 200px;
-  margin: 0 auto;
+  text-align: center;
+  margin: 0  auto;
 }
 
 .buttonProjet {
@@ -135,9 +136,9 @@
   align-items: center;
   background: rgb(222,255,214);
   background: linear-gradient(90deg, rgba(222,255,214,1) 0%, rgba(100,248,100,1) 50%, rgba(146, 189, 148, 0.701) 100%);
-  width: 700px;
+  width: 670px;
   text-align: center;
-  height: 420px;
+  height: 410px;
   border-radius: 16px;
   position: relative;
   margin: 0 auto;
@@ -152,7 +153,7 @@
   left: -2px;
   right: -2px;
   background: rgb(222,255,214);
-background: linear-gradient(90deg, rgba(222,255,214,1) 0%, rgba(100,248,100,1) 50%, rgba(146, 189, 148, 0.701) 100%);
+background: linear-gradient(20deg, rgba(222,255,214,1) 0%, rgba(100,248,100,1) 50%, rgba(146, 189, 148, 0.701) 100%);
   z-index: -1;
   border-radius: 18px;
 }
@@ -164,14 +165,29 @@ background: linear-gradient(90deg, rgba(222,255,214,1) 0%, rgba(100,248,100,1) 5
   flex-direction: column;
   justify-content: center;
   height: 400px;
-  box-shadow: 0 40px 80px #d1f5c2;
+  box-shadow: 0 10px 10px #ebf1e8;
   border-radius: 14px;
 }
 
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .competence-content {
+    padding: 10px;
+  }
+  .modal-competences {
+    width: 80%;
+  }
   .button-competences {
-    padding: .75rem 3rem;
-    font-size: 1.25rem;
+    margin-top: 5%;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+  .item {
+    width: 90%;
+    font-size: small;
+  
   }
 }

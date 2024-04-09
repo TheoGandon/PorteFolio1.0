@@ -8,8 +8,8 @@
 }
 
 .box {
-  width: 60vmin;
-  height: 60vmin;
+  width: 40vmin;
+  height: 40vmin;
   border: 1px dashed rgba(255,255,255,0.4);
   position: relative;
   
@@ -50,8 +50,8 @@
   position: absolute;
   left: -21%;
   top: -21%;
-  background: url(https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=2868fd5c3f30697d38732224e0ef51ed);
-  background-size: 100%;
+  background: url('../asset/Profil.jpg');
+  background-size: 85%;
   background-position: center center;
   display: flex;
   color: #003;
@@ -74,5 +74,11 @@
 @keyframes spin {
   to {
     transform: rotate(1turn);
+  }
+}
+
+@media (max-width: 768px) {
+  .container-profile {
+    display: none;
   }
 }

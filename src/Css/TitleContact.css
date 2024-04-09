@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .content-title h2 {
@@ -55,6 +55,9 @@
 @media screen and (max-width: 768px) {
   .content-title h2 {
     font-size: 6em;
+  }
+  .title-body {
+    margin-bottom: 120px;
   }
 }
 

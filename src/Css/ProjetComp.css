@@ -28,4 +28,22 @@ video {
     flex-grow: 1; 
 }
 
+.button-techno {
+    display: block;;
+}
+
+.button-techno p {
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+    .video-project {
+        flex-direction: column;
+    }
+    .video-project video {
+        width: 100%;
+    }
+  }
+  
 
