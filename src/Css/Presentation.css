@@ -15,7 +15,7 @@
 }
 
 .portfolio-content p {
-  font-size: 30px;
+  font-size: 20 px;
   margin-bottom: 20px;
   width: 100%;
 }
@@ -113,6 +113,6 @@
     font-size: 15px;
   }
   .portfolio-first p{
-    font-size: 17px;
+    font-size: 15px;
   }
 }

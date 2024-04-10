@@ -1,6 +1,9 @@
 import React from 'react';
 import CustomComponent from '../components/CustomComponent';
 import AnimationCompetences from '../components/AnimationCompetences';
+import ModalPdf from '../components/ModalPdf';
+import tableComp from '../asset/tableau_PF.pdf';
+import '../css/Competences.css';
 
 const Competences = () => {
   const Competences1 = [
@@ -294,6 +297,8 @@ const Competences = () => {
 
   return (
     <div>
+      <h1 className='title'>Compétences</h1>
+      <ModalPdf PDF={tableComp} />
       <AnimationCompetences />
       <CustomComponent projectsToChoose={Competences1} competences={'Gérer le patrimoine informatique'} />
       <CustomComponent projectsToChoose={Competences2} competences={'Répondre aux incidents et aux demandes d’assistance et d’évolution'} />
