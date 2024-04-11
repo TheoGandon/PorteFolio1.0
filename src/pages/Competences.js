@@ -11,37 +11,31 @@ const Competences = () => {
       title: 'Projet Server Web, FTP, DNS sous Linux',
       description: 'Mise en place et configuration d\'un serveur web, d\'un serveur FTP et de services DNS sous Linux.',
       technologies: ['Linux', 'Apache/Nginx', 'FTP', 'DNS'],
-      link: '1'
+      link: 'site-web'
     },
     {
       title: 'Projet Php Commande, authentification',
       description: 'Développement d\'un projet PHP incluant des fonctionnalités de gestion des commandes et d\'authentification des utilisateurs.',
       technologies: ['PHP', 'MySQL', 'Authentification'],
-      link: '2'
-    },
-    {
-      title: 'BDD projet géstion tour de France',
-      description: 'Mise en place d\'une base de données pour la gestion des données relatives au Tour de France.',
-      technologies: ['Base de données', 'Gestion de données'],
-      link: '3'
+      link: 'php'
     },
     {
       title: 'MA-TMA Projet Site uplaod fichier React Js / Node JS',
       description: 'Développement d\'un site web permettant le téléchargement de fichiers, en utilisant React JS pour le frontend et Node JS pour le backend.',
       technologies: ['React JS', 'Node JS'],
-      link: '4'
+      link: 'ma-tma'
     },
     {
       title: 'Application Stock de chaussures en React Native',
       description: 'Développement d\'une application mobile de gestion de stock de chaussures en utilisant React Native.',
       technologies: ['React Native'],
-      link: '5'
+      link: 'react-native'
     },
     {
       title: 'Projet Symfony Site E-commerce',
       description: 'Création d\'un site e-commerce en utilisant le framework Symfony.',
       technologies: ['Symfony', 'PHP', 'MySQL'],
-      link: '2'
+      link: 'symfony'
     },
   ];
 
@@ -50,29 +44,29 @@ const Competences = () => {
       title: 'Projet Server Web, FTP, DNS sous Linux',
       description: 'Mise en place et configuration d\'un serveur web, d\'un serveur FTP et de services DNS sous Linux.',
       technologies: ['Linux', 'Apache/Nginx', 'FTP', 'DNS'],
-      link: '1'
+      link: 'infra'
     },
     {
       title: 'Projet Symfony Site E-commerce',
       description: 'Création d\'un site e-commerce en utilisant le framework Symfony.',
       technologies: ['Symfony', 'PHP', 'MySQL'],
-      link: '2'
+      link: 'symfony'
     },
     {
       title: 'MA-TMA Projet Site uplaod fichier React Js / Node JS',
       description: 'Développement d\'un site web permettant le téléchargement de fichiers, en utilisant React JS pour le frontend et Node JS pour le backend.',
       technologies: ['React JS', 'Node JS'],
-      link: '4'
+      link: 'ma-tma'
     },
     
   ];
 
   const Competences3 = [
     {
-      title: 'Projet Php Commande, authentification',
+      title: 'Projet Php Commande',
       description: 'Développement d\'un projet PHP incluant des fonctionnalités de gestion des commandes et d\'authentification des utilisateurs.',
-      technologies: ['PHP', 'MySQL', 'Authentification'],
-      link: '2'
+      technologies: ['PHP', 'MySQL'],
+      link: 'php'
     },
     {
       title: 'Realisation d\'un site internet pour un restaurant en React JS',
@@ -90,7 +84,7 @@ const Competences = () => {
       title: 'MA-TMA Projet Site uplaod fichier React Js / Node JS',
       description: 'Développement d\'un site web permettant le téléchargement de fichiers, en utilisant React JS pour le frontend et Node JS pour le backend.',
       technologies: ['React JS', 'Node JS'],
-      link: '4'
+      link: 'ma-tma'
     },
   ];
 
@@ -99,73 +93,55 @@ const Competences = () => {
       title: 'Responsive page web d\'un média',
       description: 'Conception d\'une page web pour un média avec une mise en page réactive pour différents appareils.',
       technologies: ['HTML', 'CSS', 'Responsive Design'],
-      link: '10'
+      link: 'responsive'
     },
     {
       title: 'Création Memory Game en React JS',
       description: 'Développement d\'un jeu de Memory en utilisant React JS.',
       technologies: ['React JS'],
-      link: '17'
+      link: 'memory-game'
     },
     {
       title: 'Projet Python Sandwich',
       description: 'Développement d\'une application Python pour la gestion de sandwichs.',
       technologies: ['Python'],
-      link: '13'
+      link: 'kebab'
     },
     {
       title: 'Application Stock de chaussures en React Native',
       description: 'Développement d\'une application mobile de gestion de stock de chaussures en utilisant React Native.',
       technologies: ['React Native'],
-      link: '5'
+      link: 'react-native'
     },
     {
       title: 'MA-TMA Projet Site uplaod fichier React Js / Node JS',
       description: 'Développement d\'un site web permettant le téléchargement de fichiers, en utilisant React JS pour le frontend et Node JS pour le backend.',
       technologies: ['React JS', 'Node JS'],
-      link: '4'
+      link: 'ma-tma'
     },
     {
       title: 'Realisation Porte Folio',
       description: 'Développement d\'un portfolio en ligne pour présenter ses réalisations et compétences.',
       technologies: ['Technologies à définir'],
-      link: '15'
-    },
-    {
-      title: 'Projet Agenda',
-      description: 'Création d\'une application d\'agenda pour la gestion des rendez-vous et des événements.',
-      technologies: ['Technologies à définir'],
-      link: '9'
-    },
-    {
-      title: 'BDD projet géstion tour de France',
-      description: 'Mise en place d\'une base de données pour la gestion des données relatives au Tour de France.',
-      technologies: ['Base de données', 'Gestion de données'],
-      link: '3'
+      link: '11'
     },
     {
       title: 'Projet Symfony Site E-commerce',
       description: 'Création d\'un site e-commerce en utilisant le framework Symfony.',
       technologies: ['Symfony', 'PHP', 'MySQL'],
-      link: '2'
+      link: 'symfony'
     },
     {
       title: 'Algorithme Poulailler',
       description: 'Développement d\'algorithmes spécifiques pour la simulation et la gestion d\'un poulailler.',
       technologies: ['Algorithmes'],
-      link: '6'
-    },
-    {
-      title: 'Application Touristique SQL',
-      description: 'Développement d\'une application touristique utilisant SQL pour la gestion de la base de données.',
-      technologies: ['SQL'],
-      link: '7'
+      link: 'poulailler'
     },
     {
       title: 'Site Web HTML CSS',
       description: 'Création d\'un site web statique en utilisant HTML et CSS pour la structure et la mise en page.',
       technologies: ['HTML', 'CSS'],
-      link: '8' 
+      link: 'site-web' 
     },
   ];
 
@@ -180,31 +156,31 @@ const Competences = () => {
       title: 'Algorithme Poulailler',
       description: 'Développement d\'algorithmes spécifiques pour la simulation et la gestion d\'un poulailler.',
       technologies: ['Algorithmes'],
-      link: '6'
+      link: 'poulailler'
     },
     {
       title: 'Projet Server Web, FTP, DNS sous Linux',
       description: 'Mise en place et configuration d\'un serveur web, d\'un serveur FTP et de services DNS sous Linux.',
       technologies: ['Linux', 'Apache/Nginx', 'FTP', 'DNS'],
-      link: '1'
+      link: 'infra'
     },
     {
       title: 'Projet Symfony Site E-commerce',
       description: 'Création d\'un site e-commerce en utilisant le framework Symfony.',
       technologies: ['Symfony', 'PHP', 'MySQL'],
-      link: '2'
+      link: 'synfony'
     },
     {
       title: 'MA-TMA Projet Site uplaod fichier React Js / Node JS',
       description: 'Développement d\'un site web permettant le téléchargement de fichiers, en utilisant React JS pour le frontend et Node JS pour le backend.',
       technologies: ['React JS', 'Node JS'],
-      link: '4'
+      link: 'ma-tma'
     },
     {
       title: 'Application Stock de chaussures en React Native',
       description: 'Développement d\'une application mobile de gestion de stock de chaussures en utilisant React Native.',
       technologies: ['React Native'],
-      link: '5'
+      link: 'react-native'
     },
     {
       title: 'Realisation d\'un site internet pour un restaurant en React JS',
@@ -225,67 +201,61 @@ const Competences = () => {
       title: 'Echéquier Python',
       description: 'Implémentation d\'un jeu d\'échecs en utilisant Python.',
       technologies: ['Python'],
-      link: '16'
-    },
-    {
-      title: 'Application Touristique SQL',
-      description: 'Développement d\'une application touristique utilisant SQL pour la gestion de la base de données.',
-      technologies: ['SQL'],
-      link: '7'
+      link: 'echec'
     },
     {
       title: 'Projet Python Sandwich',
       description: 'Développement d\'une application Python pour la gestion de sandwichs.',
       technologies: ['Python'],
-      link: '13'
+      link: 'kebab'
     },
     {
       title: 'Création Memory Game en React JS',
       description: 'Développement d\'un jeu de Memory en utilisant React JS.',
       technologies: ['React JS'],
-      link: '17'
+      link: 'memory-game'
     },
     {
       title: 'MA-TMA Projet Site uplaod fichier React Js / Node JS',
       description: 'Développement d\'un site web permettant le téléchargement de fichiers, en utilisant React JS pour le frontend et Node JS pour le backend.',
       technologies: ['React JS', 'Node JS'],
-      link: '4'
+      link: 'ma-tma'
     },
     {
       title: 'React Native Application Météo',
       description: 'Développement d\'une application météo utilisant React Native pour les plateformes mobiles.',
       technologies: ['React Native'],
-      link: '14'
+      link: 'react-native'
     },
     {
       title: 'Responsive page web d\'un média',
       description: 'Conception d\'une page web pour un média avec une mise en page réactive pour différents appareils.',
       technologies: ['HTML', 'CSS', 'Responsive Design'],
-      link: '10'
+      link: 'responsive'
     },
     {
       title: 'Projet Symfony Site E-commerce',
       description: 'Création d\'un site e-commerce en utilisant le framework Symfony.',
       technologies: ['Symfony', 'PHP', 'MySQL'],
-      link: '2'
+      link: 'symfony'
     },
     {
       title: 'Emailing',
       description: 'Mise en place d\'un système d\'envoi d\'emails en masse à des destinataires spécifiques.',
       technologies: ['Emailing'],
-      link: '18'
+      link: 'emailing'
     },
     {
       title: 'Projet Server Web, FTP, DNS sous Linux',
       description: 'Mise en place et configuration d\'un serveur web, d\'un serveur FTP et de services DNS sous Linux.',
       technologies: ['Linux', 'Apache/Nginx', 'FTP', 'DNS'],
-      link: '1'
+      link: 'infra'
     },
     {
       title: 'Projet Php Commande, authentification',
       description: 'Développement d\'un projet PHP incluant des fonctionnalités de gestion des commandes et d\'authentification des utilisateurs.',
       technologies: ['PHP', 'MySQL', 'Authentification'],
-      link: '2'
+      link: 'php'
     },
     {
       title: 'Realisation d\'un site internet pour un restaurant en React JS',

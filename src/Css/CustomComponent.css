@@ -68,7 +68,7 @@
   background-color: #24c93a;
   border-radius: 7px;
   padding: 2%;
-  width: 200px;
+  width: 254px;
   text-align: center;
   margin: 0  auto;
 }
@@ -106,6 +106,7 @@
   width: auto;
   will-change: transform,opacity;
   z-index: 0;
+  text-decoration: none;
 }
 
 .buttonProjet:hover {

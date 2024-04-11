@@ -3,7 +3,7 @@ import { motion} from 'framer-motion';
 import '../css/Presentation.css';
 import '../App.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { FaPhp, FaSwift, FaCss3, FaHtml5, FaJs, FaDatabase, FaPython, FaReact, FaMobile, FaNodeJs, FaNode} from 'react-icons/fa';
+import { FaPhp, FaSwift, FaCss3, FaHtml5, FaJs, FaDatabase, FaPython, FaReact, FaMobile, FaNodeJs } from 'react-icons/fa';
 import { SiCsharp } from 'react-icons/si';
 import { SiSymfony } from 'react-icons/si';
 import Modal from 'react-modal';
