@@ -23,10 +23,11 @@ const ProjetComp = ({ projects }) => {
                 <source src={project.video2} type="video/mp4" />
               </video>
             )}
-            {project.image && (<img className='img-projet' src={project.image} />) }
-            {project.image2 && (<img className='img-projet' src={project.image2} />) }
-            {project.image3 && (<img className='img-projet' src={project.image3} />) }
+            {project.image && (<img className='img-projet' src={project.image} alt='' />) }
+            {project.image2 && (<img className='img-projet' src={project.image2} alt='' />) }
+            {project.image3 && (<img className='img-projet' src={project.image3} alt='' />) }
             {project.pdf && (<ModalPdf PDF={project.pdf} />) }
+            {project.linkgit && (<a href={project.linkgit} target='_blank' rel='noreferrer'><button className='button-git'>Voir le code</button></a>)}
           </div>
         </div>
       ))}

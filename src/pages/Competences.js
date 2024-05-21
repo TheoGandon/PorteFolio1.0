@@ -10,7 +10,7 @@ const Competences = () => {
     {
       title: 'Projet Server Web, FTP, DNS sous Linux',
       description: 'Mise en place et configuration d\'un serveur web, d\'un serveur FTP et de services DNS sous Linux.',
-      technologies: ['Linux', 'Apache/Nginx', 'FTP', 'DNS'],
+      technologies: ['Linux, ', ' Apache,', ' FTP,', ' DNS'],
       link: 'site-web'
     },
     {
@@ -29,7 +29,13 @@ const Competences = () => {
       title: 'Application Stock de chaussures en React Native',
       description: 'Développement d\'une application mobile de gestion de stock de chaussures en utilisant React Native.',
       technologies: ['React Native'],
-      link: 'react-native'
+      link: 'stock'
+    },
+    {
+      title: 'BDD Projet Gestion Tour de France',
+      description: 'Mise en place d\'une base de données pour la gestion des données relatives au Tour de France.',
+      technologies: ['Base de données, ', 'Gestion de données, ', 'Symfony, ', 'React JS'],
+      link: 'bdd'
     },
     {
       title: 'Projet Symfony Site E-commerce',
@@ -43,7 +49,7 @@ const Competences = () => {
     {
       title: 'Projet Server Web, FTP, DNS sous Linux',
       description: 'Mise en place et configuration d\'un serveur web, d\'un serveur FTP et de services DNS sous Linux.',
-      technologies: ['Linux', 'Apache/Nginx', 'FTP', 'DNS'],
+      technologies: ['Linux, ', ' Apache,', ' FTP,', ' DNS'],
       link: 'infra'
     },
     {
@@ -81,6 +87,12 @@ const Competences = () => {
       link: '12'
     },
     {
+      title: 'Réalisation Portfolio',
+      description: 'Développement d\'un portfolio en ligne pour présenter ses réalisations et compétences.',
+      technologies: ['React JS, ', 'HTML, ', 'CSS, ', 'Three JS'],
+      link: 'portfolio',
+    },
+    {
       title: 'MA-TMA Projet Site uplaod fichier React Js / Node JS',
       description: 'Développement d\'un site web permettant le téléchargement de fichiers, en utilisant React JS pour le frontend et Node JS pour le backend.',
       technologies: ['React JS', 'Node JS'],
@@ -111,7 +123,7 @@ const Competences = () => {
       title: 'Application Stock de chaussures en React Native',
       description: 'Développement d\'une application mobile de gestion de stock de chaussures en utilisant React Native.',
       technologies: ['React Native'],
-      link: 'react-native'
+      link: 'stock'
     },
     {
       title: 'MA-TMA Projet Site uplaod fichier React Js / Node JS',
@@ -132,32 +144,26 @@ const Competences = () => {
       link: 'symfony'
     },
     {
-      title: 'Algorithme Poulailler',
-      description: 'Développement d\'algorithmes spécifiques pour la simulation et la gestion d\'un poulailler.',
-      technologies: ['Algorithmes'],
-      link: 'poulailler'
-    },
-    {
       title: 'Site Web HTML CSS',
       description: 'Création d\'un site web statique en utilisant HTML et CSS pour la structure et la mise en page.',
       technologies: ['HTML', 'CSS'],
       link: 'site-web' 
     },
+    {
+      title: 'Projet Server Web, FTP, DNS sous Linux',
+      description: 'Mise en place et configuration d\'un serveur web, d\'un serveur FTP et de services DNS sous Linux.',
+      technologies: ['Linux, ', ' Apache,', ' FTP,', ' DNS'],
+      link: 'site-web'
+    },
+    {
+      title: 'BDD Projet Gestion Tour de France',
+      description: 'Mise en place d\'une base de données pour la gestion des données relatives au Tour de France.',
+      technologies: ['Base de données, ', 'Gestion de données, ', 'Symfony, ', 'React JS'],
+      link: 'bdd'
+    },
   ];
 
   const Competences5 = [
-    {
-      title: 'Realisation Porte Folio',
-      description: 'Développement d\'un portfolio en ligne pour présenter ses réalisations et compétences.',
-      technologies: ['Technologies à définir'],
-      link: '15'
-    },
-    {
-      title: 'Algorithme Poulailler',
-      description: 'Développement d\'algorithmes spécifiques pour la simulation et la gestion d\'un poulailler.',
-      technologies: ['Algorithmes'],
-      link: 'poulailler'
-    },
     {
       title: 'Projet Server Web, FTP, DNS sous Linux',
       description: 'Mise en place et configuration d\'un serveur web, d\'un serveur FTP et de services DNS sous Linux.',
@@ -180,7 +186,7 @@ const Competences = () => {
       title: 'Application Stock de chaussures en React Native',
       description: 'Développement d\'une application mobile de gestion de stock de chaussures en utilisant React Native.',
       technologies: ['React Native'],
-      link: 'react-native'
+      link: 'stock'
     },
     {
       title: 'Realisation d\'un site internet pour un restaurant en React JS',
@@ -241,7 +247,7 @@ const Competences = () => {
     },
     {
       title: 'Emailing',
-      description: 'Mise en place d\'un système d\'envoi d\'emails en masse à des destinataires spécifiques.',
+      description: 'Création d\'une newsletter en HTML CSS.',
       technologies: ['Emailing'],
       link: 'emailing'
     },
@@ -258,10 +264,16 @@ const Competences = () => {
       link: 'php'
     },
     {
-      title: 'Realisation d\'un site internet pour un restaurant en React JS',
-      description: 'Développement d\'un site web pour un restaurant en utilisant React JS.',
-      technologies: ['React JS'],
-      link: '11'
+      title: 'BDD Projet Gestion Tour de France',
+      description: 'Mise en place d\'une base de données pour la gestion des données relatives au Tour de France.',
+      technologies: ['Base de données, ', 'Gestion de données, ', 'Symfony, ', 'React JS'],
+      link: 'bdd'
+    },
+    {
+      title: 'Site Web HTML CSS',
+      description: 'Création d\'un site web statique en utilisant HTML et CSS pour la structure et la mise en page.',
+      technologies: ['HTML', 'CSS'],
+      link: 'site-web' 
     },
   ];
 

@@ -47,28 +47,31 @@ const Header = () => {
         </motion.div>
       </div>
       <div className='burger-icon' onClick={toggleMenu}>
-  <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
-  <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
-  <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
-</div>
+        <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
+        <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
+        <div className={`bar ${isOpen ? 'animate' : ''}`}></div>
+      </div>
       <div className='nav-linker'>
         <motion.div className={`nav-link ${activePage === '/' ? '' : 'container'}`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} variants={item}>
-          <button onClick={handleNavigation('/')}><GooeyButton buttonText={'Accueil'}/></button>
+          <div onClick={handleNavigation('/')}><GooeyButton buttonText={'Accueil'}/></div>
         </motion.div>
         <motion.div className={`nav-link ${activePage === '/presentation' ? '' : 'container'}`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} variants={item}>
-        <button onClick={handleNavigation('/presentation')}><GooeyButton buttonText={'Présentation'}/></button>
+          <div onClick={handleNavigation('/presentation')}><GooeyButton buttonText={'Présentation'}/></div>
         </motion.div>
         <motion.div className={`nav-link ${activePage === '/competences' ? '' : 'container'}`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} variants={item}>
-          <button onClick={handleNavigation('/competences')}><GooeyButton buttonText={'Compétences'}/></button>
+          <div onClick={handleNavigation('/competences')}><GooeyButton buttonText={'Compétences'}/></div>
         </motion.div>
         <motion.div className={`nav-link ${activePage === '/projets' ? '' : 'container'}`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} variants={item}>
-          <button onClick={handleNavigation('/projets')}><GooeyButton buttonText={'Projets'}/></button>
+          <div onClick={handleNavigation('/projets')}><GooeyButton buttonText={'Projets'}/></div>
         </motion.div>
         <motion.div className={`nav-link ${activePage === '/stages' ? '' : 'container'}`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} variants={item}>
-          <button onClick={handleNavigation('/stages')}><GooeyButton buttonText={'Stages'}/></button>
+          <div onClick={handleNavigation('/stages')}><GooeyButton buttonText={'Stages'}/></div>
+        </motion.div>
+        <motion.div className={`nav-link ${activePage === '/veille' ? '' : 'container'}`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} variants={item}>
+          <div onClick={handleNavigation('/veille')}><GooeyButton buttonText={'Veilles technologiques'}/></div>
         </motion.div>
         <motion.div className={`nav-link ${activePage === '/contact' ? '' : 'container'}`} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} variants={item}>
-          <button onClick={handleNavigation('/contact')}><GooeyButton buttonText={'Contact'}/></button>
+          <div onClick={handleNavigation('/contact')}><GooeyButton buttonText={'Contact'}/></div>
         </motion.div>
       </div>
     </motion.div>

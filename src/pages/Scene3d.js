@@ -1,10 +1,11 @@
 import * as THREE from 'three';
-import React, { useRef, Suspense, useState } from 'react';
+import React, { useRef, Suspense, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei';
 import Scene3dHtml from './Scene3dHtml.js';
 import '../css/Scene3d.css';
 import { useNavigate } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 
 function Model(props) {
@@ -22,7 +23,7 @@ function Model(props) {
     setTimeout(() => {
       navigate('/presentation');
       console.log('navigating');
-    }, 3000);
+    }, 6000);
   }
 
   useFrame((state) => {
@@ -69,9 +70,10 @@ function Model(props) {
 }
 
 function Scene3d() {
-
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const cameraPosition = isMobile ? [0, 15, -25] : [-5, 0, -15];
   return (
-    <Canvas style={{ position: 'absolute', top: 0, left: 0 }} camera={{ position: [-5, 0, -15], fov: 55 }} gl={{ logarithmicDepthBuffer: true }}>
+    <Canvas style={{ position: 'absolute', top: 0, left: 0 }} camera={{ position: cameraPosition, fov: 55 }} gl={{ logarithmicDepthBuffer: true }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <Suspense fallback={null}>
         <group rotation={[0, Math.PI, 0]} position={[0, 1, 0]}>

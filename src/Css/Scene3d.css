@@ -33,6 +33,14 @@ body {
 .title {
   color: #000000;
   bottom: 20px;
-  left: 280px;
-  width: 300px;
+  left: 320px;
+  width: 450px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    left: -140px;
+    width: 300px;
+  }
+
 }

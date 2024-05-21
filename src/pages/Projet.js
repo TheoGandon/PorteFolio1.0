@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjetComp from '../components/ProjetComp';
-import test from '../asset/test.mp4';
+import test from '../asset/test.mp4'
 
 //Videos Projet
 import SiteWeb from '../asset/ProjetVideo/Projet Studio/Studio.mp4'
@@ -12,6 +12,7 @@ import Poulailler from '../asset/ProjetVideo/Poulailler/poulailler.mp4'
 import Responsive from '../asset/ProjetVideo/Responsive/responsive.mp4'
 import Responsive2 from '../asset/ProjetVideo/Responsive/responsive2.mp4'
 import SneakHub from '../asset/ProjetVideo/SneakHub/sneakhub.mp4'
+import PorteFolio from '../asset/ProjetVideo/PorteFolio/pfV.mp4'
 
 //Photos Projet
 import Infra1 from '../asset/ProjetVideo/Infra/apash.png'
@@ -35,16 +36,24 @@ import Symfony2 from '../asset/ProjetVideo/Symfony/Documentation.pdf'
 
 const projects = [
   {
+    title: 'Création Memory Game en React JS',
+    description: 'Développement d\'un jeu de Memory en utilisant React JS.',
+    technologies: ['React JS'],
+    video: MemoryGame,
+    link: 'memory-game',
+    linkgit: 'https://github.com/TheoGandon/MemoryGame'
+  },
+  {
     title: 'Site Web HTML CSS',
     description: 'Création d\'un site web statique en utilisant HTML et CSS pour la structure et la mise en page.',
-    technologies: ['HTML', 'CSS'],
+    technologies: ['HTML, ', 'CSS'],
     video: SiteWeb,
     link: 'site-web'
   },
   {
     title: 'Infrastructure Web',
     description: 'Conception et mise en place d\'une infrastructure web, incluant les serveurs web, FTP et DNS, sous Linux.',
-    technologies: ['Linux', 'Apache/Nginx', 'FTP', 'DNS'],
+    technologies: ['Linux, ', 'Apache, ', 'FTP, ', 'DNS'],
     image: Infra1,
     image2: Infra2,
     image3: Infra3,
@@ -52,7 +61,7 @@ const projects = [
   },
   {
     title: 'Emailing',
-    description: 'Mise en place d\'un système d\'envoi d\'emails en masse à des destinataires spécifiques.',
+    description: 'Création d\'une newsletter en HTML CSS.',
     technologies: ['Emailing'],
     video: Emailing,
     link: 'emailing'
@@ -75,17 +84,18 @@ const projects = [
   },
   {
     title: 'Projet Symfony Site E-commerce',
-    description: 'Création d\'un site e-commerce en utilisant le framework Symfony.',
-    technologies: ['Symfony', 'PHP', 'MySQL'],
+    description: 'Création d\'un site e-commerce en utilisant le framework Symfony et React JS.',
+    technologies: ['Symfony', 'PHP', 'MySQL, ', 'React JS'],
     image: Symfony,
     pdf: Symfony2,
-    link: 'symfony'
+    link: 'symfony',
+    linkgit: 'https://github.com/TheoGandon/Projet-BTS-Web'
     
   },
   {
     title: 'Responsive Page Web d\'un Média',
     description: 'Conception d\'une page web pour un média avec une mise en page réactive pour différents appareils.',
-    technologies: ['HTML', 'CSS', 'Responsive Design'],
+    technologies: ['HTML, ', 'CSS, ', ' Responsive Design'],
     video: Responsive,
     video2: Responsive2,
     pdf: Responsive3,
@@ -94,7 +104,7 @@ const projects = [
   {
     title: 'BDD Projet Gestion Tour de France',
     description: 'Mise en place d\'une base de données pour la gestion des données relatives au Tour de France.',
-    technologies: ['Base de données', 'Gestion de données'],
+    technologies: ['Base de données, ', 'Gestion de données, ', 'Symfony, ', 'React JS'],
     image: ProjetBdd,
     image2: ProjetBdd2,
     image3: ProjetBdd3,
@@ -103,7 +113,7 @@ const projects = [
   {
     title: 'React Native Application Météo',
     description: 'Développement d\'une application météo utilisant React Native pour les plateformes mobiles.',
-    technologies: ['React Native'],
+    technologies: ['React Native,  ', 'API Météo'],
     image: MeteoApp,
     image2: MeteoApp2,
     link: 'react-native'
@@ -111,9 +121,10 @@ const projects = [
   {
     title: 'Réalisation Portfolio',
     description: 'Développement d\'un portfolio en ligne pour présenter ses réalisations et compétences.',
-    technologies: ['Technologies à définir'],
-    video: test,
-    link: 'portfolio'
+    technologies: ['React JS, ', 'HTML, ', 'CSS, ', 'Three JS'],
+    video: PorteFolio,
+    link: 'portfolio',
+    linkgit: 'https://github.com/TheoGandon/TheoGandonPF'
   },
   {
     title: 'Échéquier Python',
@@ -125,23 +136,17 @@ const projects = [
   {
     title: 'MA-TMA Projet Site Upload Fichier React Js / Node JS',
     description: 'Développement d\'un site web permettant le téléchargement de fichiers, en utilisant React JS pour le frontend et Node JS pour le backend.',
-    technologies: ['React JS', 'Node JS'],
+    technologies: ['React JS, ', 'Node JS'],
     video: test,
     link: 'ma-tma'
   },
   {
     title: 'Application Stock de Chaussures en React Native',
     description: 'Création d\'une application mobile pour la gestion de stock de chaussures, en utilisant React Native.',
-    technologies: ['React Native'],
+    technologies: ['React Native, ', 'Symfony'],
     video: SneakHub,
-    link: 'react-native'
-  },
-  {
-    title: 'Création Memory Game en React JS',
-    description: 'Développement d\'un jeu de Memory en utilisant React JS.',
-    technologies: ['React JS'],
-    video: MemoryGame,
-    link: 'memory-game'
+    link: 'stock',
+    linkgit: 'https://github.com/hhugo7/Projet-BTS-App'
   },
   {
     title: 'Projet Python Sandwich',

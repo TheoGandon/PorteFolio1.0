@@ -8,13 +8,11 @@ import Competences from './pages/Competences';
 import Contact from './pages/Contact';
 import Projet from './pages/Projet'; 
 import Stage from './pages/Stage';
+import Veille from './pages/Veille';
 
 function App() {
   return (
     <div className="App">
-      <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></link>
-      </head> 
       <BrowserRouter>
         <Routes>
           <Route
@@ -28,6 +26,7 @@ function App() {
                   <Route path='/contact' element={<Contact />} />
                   <Route path='/projets' element={<Projet />} />
                   <Route path='/stages' element={<Stage />} />
+                  <Route path='/veille' element={<Veille />} />
                 </Routes>
                 <Footer />
               </>

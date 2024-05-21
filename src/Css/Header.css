@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%; 
-  max-width: 1000px;
+  max-width: 1100px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-top: 1%;
   margin: 2% auto;
@@ -33,6 +33,10 @@
 
 .nav-linker {
   display: flex;
+}
+
+.nav-linker div {
+  margin-right: 7px;
 }
 
 .nav-title {
@@ -76,6 +80,10 @@
   display: none;
 }
 
+.button-spacing {
+  margin-right: 15px;
+}
+
 @media screen and (max-width: 768px) {
   .nav-linker {
     display: none;
@@ -87,6 +95,10 @@
     background-color: #333;
     padding: 10px;
     text-align: center;
+  }
+
+  .nav-linker div {
+    margin: 5px 0;
   }
 
   .burger-icon {

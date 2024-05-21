@@ -1,5 +1,5 @@
-.new_footer_area {
-  background: #fbfbfd;
+.footer_bg {
+  overflow: hidden;
 }
 .mb-0 {
   font-size: 20px;
@@ -114,7 +114,7 @@ background-size:100%;
   left: 38%;
   position: absolute;
   -webkit-animation: myfirst 30s linear infinite;
-  animation: myfirst 20s linear infinite;
+  animation: bike 20s linear infinite;
 }
 
 
@@ -137,14 +137,25 @@ background-size:100%;
 }
 }
 
-@keyframes myfirst {
+@keyframes bike {
 0% {
   left: -25%;
+  rotate: -45deg;
 }
 100% {
   left: 100%;
+  rotate: -45deg;
 }
 }
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+  }
 
 .table {
   margin: 0 auto;
